@@ -1,0 +1,19 @@
+:root {
+    --max-width-container: 1200px;
+
+    @media (max-width: 1400px) {
+        --max-width-container: 1140px;
+    }
+    
+    @media (max-width: 1200px) {
+        --max-width-container: 970px;
+    }
+    
+    @media (max-width: 992px) {
+        --max-width-container: 750px;
+    }
+    
+    @media (max-width: 767px) {
+        --max-width-container: none;
+    }
+}

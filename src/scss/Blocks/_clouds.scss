@@ -1,0 +1,11 @@
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    min-width: 3840px;
+    min-height: 100vh;
+    opacity: 0;
+    background: url(../images/clouds.png) center center/cover no-repeat;
+    animation: 5s moveClouds infinite linear;
+    animation-delay: 1.5s;
+}

@@ -1,0 +1,46 @@
+.btn {
+    background-color: #F2E1C2;
+    padding: 10px 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &--dark {
+        background-color: #262526;
+        padding: 10px 119px;
+        color: #F2E1C2;
+    }
+    &--mobile {
+        padding: 20px 35px;
+        display: none;
+        position: absolute;
+        z-index: 5;
+        bottom: -100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .btn {
+        &--mobile {
+            display: block;
+        }
+        &--dark {
+            @include adaptive-value(font-size, 16, 12);
+            @include adaptive-value(padding-left, 15, 5);
+            @include adaptive-value(padding-right, 15, 5);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        &--mobile {
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

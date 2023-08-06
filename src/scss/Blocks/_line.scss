@@ -1,0 +1,39 @@
+.line {
+    height: 109%;
+    width: 2px;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    animation: showLine 1s linear;
+    &__top-round {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #D9D9D9;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        animation: showRound .1s linear;
+    }
+    &__bot-round {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #D9D9D9;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+        animation: showRound 1s linear;
+        opacity: 0;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media (max-width: 300px) {
+    .line {
+        display: none;
+    }
+}
